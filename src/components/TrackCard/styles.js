@@ -65,7 +65,7 @@ export const CardImg = styled.img`
     width: 100%;
     height: 100%;
 
-    border-radius: 2.5rem;
+    border-radius: 14px;
 
     box-shadow: 6px 10px 3px -3px rgba(0,0,0,0.5);
 `;
@@ -75,5 +75,5 @@ export const CardTitle = styled.h3`
     overflow: hidden; /* Oculta qualquer texto que ultrapasse o limite do contêiner */
     text-overflow: ellipsis; /* Adiciona reticências quando o texto não couber no contêiner */
 
-    font-size: .8rem
+    font-size: 1.05rem
 `;

@@ -5,25 +5,59 @@ export const Container = styled.div`
     width: 100vw;
 `;
 
-export const MainContainer = styled.div`
-    height: 60%;
+export const HeaderContainer = styled.div`
+    height: 7%;
     width: 100%;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: end;
 
-    //border: 1px solid red;
+    background-color: #1E1E1E;
+
+    // border: 1px solid black;
 `;
 
-export const MainContent = styled.div`
-    height: 90%;
-    width: 95%;
+export const HeaderContent = styled.div`
+    height: 100%;
+    width: 90%;
 
     display: flex;
     flex-direction: row;
-    align-items: start;
+    justify-content: start;
+    align-items: center;
+
+    color: #fff;
+
+    // border: 1px solid white;
+`;
+
+
+export const HeaderLogo = styled.img`
+    height: 65%;
+    width: auto;
+    
+    cursor: pointer;
+`;
+
+export const MainContainer = styled.div`
+    height: 43%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    // border: 1px solid red;
+`;
+
+export const MainContent = styled.div`
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
     // border: 1px solid red;
 `;
@@ -37,42 +71,50 @@ export const UserDataContainer = styled.div`
 
     display: flex;
     flex-direction: row;
+    align-items: center;
     
-    // border: 1px solid red;
+    //border: 1px solid red;
 `;
 
 export const UserSocialContent = styled.div`
-    width: 40%;
-    height: 160px;
-    min-height: 160px;
+    width: 50%;
+    height: 22px;
+    min-height: 220px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
     // border: 1px solid purple;
 `;
 
 export const UserAboutContent = styled.div`
     width: 60%;
-    height: 160px;
-    min-height: 160px;
+    height: 220px;
+    min-height: 220px;
 
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+
+    // border: 1px solid green;
 `;
 
 export const CarouselContainer = styled.div`
-    height: 40%;
+    height: 50%;
     width: 100%;
 
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    // border: 1px solid red;
+    // border: 1px solid purple;
 `;
 
 export const UserName = styled.label`
-    font-size: 1.5rem;
+    font-family: TheBoldFont, sans-serif;
+    font-size: 2.5rem;
     font-weight: 700;
 
     margin-left: 30px;
@@ -98,4 +140,20 @@ export const SocialMidia = styled.img`
     cursor: pointer;
 
     // border: 1px solid red;
+`;
+
+export const UserAboutSection = styled.div`
+    height: min-content;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    // border: 1px solid green;
+`;
+
+export const Label = styled.label`
+    text-align: right;
+    font-size: .95rem;
 `;

@@ -10,6 +10,7 @@ import TwitterIcon from '../../assets/socialIcons/twitter.svg';
 import YoutubeIcon from '../../assets/socialIcons/youtube.svg';
 import SpotifyIcon from '../../assets/socialIcons/spotify.svg';
 import SoundcloudIcon from '../../assets/socialIcons/soundCloud.svg';
+import LogoImg from '../../assets/waveTextWhite.svg';
 
 const UserProfile = () => {
     const user = {
@@ -52,21 +53,30 @@ const UserProfile = () => {
         <C.Container>
             <AnimateBackground blur={false} />
 
+            <C.HeaderContainer>
+                <C.HeaderContent>
+                    <C.HeaderLogo src={LogoImg} />
+                </C.HeaderContent>
+            </C.HeaderContainer>
+
             <C.MainContainer>
                 <C.MainContent>
-                    <ProfilePicture props={user.profilePicture} />
-
                     <C.UserDataContainer>
+                        <ProfilePicture props={user.profilePicture} />
                         <C.UserSocialContent>
                             <C.UserName>{user.name}</C.UserName>
                             <C.SocialContainer>
                                 {checkSocialMidia()}
                             </C.SocialContainer>
-
                         </C.UserSocialContent>
 
                         <C.UserAboutContent>
-                            UserAboutContent
+                            <C.Label>About me</C.Label>
+                            <C.UserAboutSection>
+                                <C.Label>{user.about}</C.Label>
+                                <C.Label>{user.contact}</C.Label>
+                            </C.UserAboutSection>
+
                         </C.UserAboutContent>
                     </C.UserDataContainer>
 

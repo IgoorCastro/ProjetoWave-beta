@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
-    width: 95%;
-    height: 98%;
+    width: 80%;
+    height: 100%;
     min-height: 250px;
 
     display: flex;

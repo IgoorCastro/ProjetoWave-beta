@@ -8,6 +8,8 @@ export const AnimateContainer = styled.div`
     justify-content: center;
     align-items: center;
 
+    opacity: 0.5;
+
     position: fixed; /* Para garantir que o loader fique sempre visível */
     top: 0;
     left: 0;
@@ -45,7 +47,7 @@ export const AnimateBackground = styled.div`
         animation: ${slide} 5s forwards;
     ` : css`
         & > img {
-            filter: blur(15px);
+            filter: blur(13px);
         }
     `};
 

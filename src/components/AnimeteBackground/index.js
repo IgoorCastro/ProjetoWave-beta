@@ -9,10 +9,6 @@ const AnimateBackground = ({ blur = false }) => {
                 <C.AnimateBackground blur={blur} >
                     <C.AnimateImg src={logo} />
                 </C.AnimateBackground>
-
-                <C.AnimateBackground blur={blur} >
-                    <C.AnimateImg src={logo} />
-                </C.AnimateBackground>
             </C.AnimateContent>
         </C.AnimateContainer>
     )
